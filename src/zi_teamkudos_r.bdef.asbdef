@@ -1,0 +1,29 @@
+managed implementation in class zbp_i_teamkudos_r unique;
+strict ( 2 );
+with draft;
+define behavior for ZI_TeamKudos_R
+  persistent table zteam_kudos
+  lock master
+  total etag LastChangedAt
+  authorization master ( instance )
+      draft table zteam_kudos_d
+{
+  create ( authorization : global );
+  update;
+  delete;
+
+  // 2. Draft actions are declared like this:
+  draft action Edit;
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Resume;
+  draft determine action Prepare;
+
+  // 3. Your custom action for the demo
+  action ApproveKudo result [1] $self;
+
+  validation validateUser on save { field SenderName, ReceiverName; } // Ensure fields match your CDS aliases
+
+
+  field ( readonly ) Uuid, CreatedAt, CreatedBy, LastChangedAt;
+}

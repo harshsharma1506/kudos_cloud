@@ -1,4 +1,6 @@
-@AccessControl.authorizationCheck: #NOT_REQUIRED
+@ObjectModel.usageType.serviceQuality: #X
+@ObjectModel.usageType.sizeCategory: #S
+@ObjectModel.usageType.dataClass: #MIXED@AccessControl.authorizationCheck: #NOT_REQUIRED
 @EndUserText.label: 'Root view for Kudos'
 @UI.headerInfo: { typeName: 'Kudos', typeNamePlural: 'Kudos', title: { value: 'Message' }, description: { value: 'Sender' } }
 define root view entity ZI_TeamKudos_R as select from zteam_kudos   
