@@ -60,6 +60,19 @@ mapping for zteam_kudos
 }
 
 ------------------------------
+## Sources
 
+BTP trial can be taken from: 
+https://www.sap.com/products/technology-platform/trial.html
 
+MCP server used is hosted at: 
+https://github.com/marianfoo/mcp-sap-docs
 
+Update the ADT tools from:
+https://tools.hana.ondemand.com/
+
+ABAPgit can be taken from:
+https://developers.sap.com/tutorials/abap-install-abapgit-plugin..html
+
+Github Copilot can be installed as a plugin: 
+https://marketplace.eclipse.org/content/github-copilot
