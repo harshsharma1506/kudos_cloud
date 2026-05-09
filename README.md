@@ -1,4 +1,4 @@
-# kudos_cloud
+<img width="660" height="600" alt="image" src="https://github.com/user-attachments/assets/00a39b62-7270-4b94-8e06-2b8a5cae786d" /># kudos_cloud
 Demo for HCL colleagues  - for AI enabled development &amp; abapGIT
 ------------------------------
 ## 🏆 SAP Team Kudos App (RAP-based)
@@ -76,3 +76,23 @@ ABAPgit can be taken from:
 
 Github Copilot can be installed as a plugin: 
 * https://marketplace.eclipse.org/content/github-copilot
+
+------------------------------
+
+Screenshots: 
+<img width="1906" height="652" alt="image" src="https://github.com/user-attachments/assets/38b51347-4bfb-48b5-844f-f78fd4cab5b4" />
+
+------------------------------
+<img width="660" height="600" alt="image" src="https://github.com/user-attachments/assets/77ebecef-ae71-4057-8878-e3ac795b4033" />
+
+------------------------------
+Main CDS 
+
+<img width="1883" height="307" alt="image" src="https://github.com/user-attachments/assets/a9016c7a-50e8-4b22-9403-9f7c746a6428" />
+
+------------------------------
+Draft Table 
+
+<img width="1919" height="296" alt="image" src="https://github.com/user-attachments/assets/7bcf6297-cc6a-4bfd-b537-f7a6f35c0d12" />
+
+
