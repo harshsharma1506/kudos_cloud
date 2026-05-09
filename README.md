@@ -1,4 +1,4 @@
-<img width="660" height="600" alt="image" src="https://github.com/user-attachments/assets/00a39b62-7270-4b94-8e06-2b8a5cae786d" /># kudos_cloud
+# kudos_cloud
 Demo for HCL colleagues  - for AI enabled development &amp; abapGIT
 ------------------------------
 ## 🏆 SAP Team Kudos App (RAP-based)
