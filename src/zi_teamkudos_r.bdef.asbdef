@@ -2,11 +2,11 @@ managed implementation in class zbp_i_teamkudos_r unique;
 strict ( 2 );
 with draft;
 define behavior for ZI_TeamKudos_R
-  persistent table zteam_kudos
-  lock master
-  total etag LastChangedAt
-  authorization master ( instance )
-      draft table zteam_kudos_d
+persistent table zteam_kudos
+lock master
+total etag LastChangedAt
+authorization master ( instance )
+draft table zteam_kudos_d
 {
   create ( authorization : global );
   update;
@@ -25,5 +25,15 @@ define behavior for ZI_TeamKudos_R
   validation validateUser on save { field SenderName, ReceiverName; } // Ensure fields match your CDS aliases
 
 
-  field ( readonly ) Uuid, CreatedAt, CreatedBy, LastChangedAt;
+  field ( readonly, numbering : managed ) Uuid;
+  field ( readonly ) CreatedAt, CreatedBy, LastChangedAt;
+  mapping for zteam_kudos
+    {
+      Uuid       = uuid;
+      SenderName = sender;
+      ReceiverName   = receiver;
+      Message    = message;
+      Status     = status;
+      CreatedAt  = created_at;
+    }
 }
