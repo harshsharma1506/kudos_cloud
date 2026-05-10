@@ -2,7 +2,8 @@
 Demo for HCL colleagues  - for AI enabled development &amp; abapGIT
 ------------------------------
 ## 🏆 SAP Team Kudos App (RAP-based)
-A modern, cloud-ready SAP application built using the ABAP RESTful Application Programming Model (RAP). This app allows team members to send "Kudos" to each other, fostering a culture of appreciation.
+SAP application built using the ABAP RESTful Application Programming Model (RAP). 
+This app allows team members to send "Kudos" to each other, fostering a culture of appreciation. 
 ## 🚀 AI-Driven Development: GitHub Copilot + MCP
 This project demonstrates a high-velocity development workflow using Generative AI and the Model Context Protocol (MCP).
 ## How the MCP Server for SAP Documentation was utilized:
