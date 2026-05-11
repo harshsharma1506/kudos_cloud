@@ -1,7 +1,7 @@
 @ObjectModel.usageType.serviceQuality: #X
 @ObjectModel.usageType.sizeCategory: #S
 @ObjectModel.usageType.dataClass: #MIXED@AccessControl.authorizationCheck: #NOT_REQUIRED
-@EndUserText.label: 'Root view for Kudos'
+@EndUserText.label: 'Root view for Kudos as demo for HCL'
 @UI.headerInfo: { typeName: 'Kudos', typeNamePlural: 'Kudos', title: { value: 'Message' }, description: { value: 'Sender' } }
 define root view entity ZI_TeamKudos_R as select from zteam_kudos   
 {
@@ -38,6 +38,17 @@ define root view entity ZI_TeamKudos_R as select from zteam_kudos
           identification: [ { position: 30 } ] }
   @UI.multiLineText: true
   message     as Message,
+  
+  @UI: { 
+    lineItem: [ 
+      { position: 40 },
+      { type: #FOR_ACTION, dataAction: 'ApproveKudo', label: 'Approve', criticality: 'CriticalityValue' } 
+    ],
+    identification: [ 
+      { position: 40},
+      { type: #FOR_ACTION, dataAction: 'ApproveKudo', label: 'Approve', criticality: 'CriticalityValue' } 
+    ] 
+  }
 
   @EndUserText.label: 'Status'
   status      as Status,
